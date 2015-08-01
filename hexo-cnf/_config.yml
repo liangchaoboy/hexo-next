@@ -1,0 +1,111 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Just For Better ...
+subtitle:
+description: 阅读，实践，总结，分享
+author: Jeremy Yang
+email: jeremy.yang@justfbt.com
+#language: zh-CN
+language: zh-Hans
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://www.justfbt.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+#theme: landscape
+#theme: light
+#theme: jacman
+theme: next
+#Social links
+social:
+  Github: https://github.com/justfbt
+  Gitcafe: https://gitcafe.com/justfbt
+  Blog: http://blog.csdn.net/jeremy_yangt 
+#  E-maill: jeremy.yang@justfbt.com 
+#  twitter: https://twitter.com/your-user-name
+#  weibo: http://weibo.com/your-user-name
+#  douban: http://douban.com/people/your-user-name
+#  zhihu: http://www.zhihu.com/people/your-user-name
+
+# 头像
+avatar: http://7xk2y2.com1.z0.glb.clouddn.com/logo_qianbi.png
+# 设定站点建立时间,这个时间将在站点的底部显示，例如 © 2013 - 2015
+since: 2015
+
+# 站点统计
+baidu_analytics: 8f2afc3e089e3ef45b5c4f660adcbf10
+# 多说
+duoshuo_shortname: justfbt
+#站内搜索
+swiftype_key: 1kauZFFzW6FUfZs8HACz
+
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+#  type: git
+#  repo: git@gitcafe.com:justfbt/justfbt.git
+#  branch: gitcafe-pages
+#  message: update
+#  type: git
+#  repo: git@github.com:justfbt/justfbt.github.io.git
+#  branch: master
+#  message: update
+  type: git
+  message: update
+  repo:
+    github: git@github.com:justfbt/justfbt.github.io.git,master
+    gitcafe: git@gitcafe.com:justfbt/justfbt.git,gitcafe-pages
